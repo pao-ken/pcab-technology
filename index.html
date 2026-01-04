@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>P-CAB Technology | Portal Oficial</title>
+  <meta name="description" content="Portal oficial de P-CAB Technology: Robótica, Programación e IA. Acceso para alumnos, padres y comunidad. Huancayo, Perú." />
+
+  <!-- Tipografía (opcional, funciona sin internet si lo borras) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand__logo">P</span>
+        <span class="brand__text">
+          <strong>P-CAB Technology</strong>
+          <small>Portal Oficial</small>
+        </span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#accesos">Accesos</a>
+        <a href="#ecosistema">Ecosistema</a>
+        <a href="#evidencias">Evidencias</a>
+        <a href="#profesores">Profesores</a>
+        <a href="#contacto" class="btn btn--sm">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="inicio" class="hero">
+    <div class="container hero__grid">
+      <section class="hero__copy">
+        <div class="badge">
+          <span class="dot"></span>
+          Huancayo · Educación STEM · Proyectos reales
+        </div>
+
+        <h1>
+          Aprende <span class="grad">Robótica</span>, <span class="grad">Programación</span> e
+          <span class="grad">IA</span> con una academia formal y verificable.
+        </h1>
+
+        <p class="lead">
+          En <strong>P-CAB Technology</strong> formamos a niños, adolescentes y jóvenes con metodología práctica,
+          evidencias por clase y acompañamiento docente. Este es el <strong>portal oficial</strong> para alumnos y padres.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn" href="#accesos">Entrar al Portal</a>
+          <a class="btn btn--ghost" href="#ecosistema">Ver líneas P-CAB Tech</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat">
+            <strong>STEM</strong>
+            <span>Aprendizaje práctico</span>
+          </div>
+          <div class="stat">
+            <strong>Niveles</strong>
+            <span>Por edad y progreso</span>
+          </div>
+          <div class="stat">
+            <strong>Evidencias</strong>
+            <span>Fotos, avances y proyectos</span>
+          </div>
+        </div>
+      </section>
+
+      <aside class="hero__card">
+        <div class="card card--glow">
+          <h3>Acceso rápido</h3>
+          <p class="muted">Los botones más importantes para alumnos y padres.</p>
+
+          <div class="quick">
+            <a class="quick__item" href="#contacto">
+              <span class="icon">📲</span>
+              <span>
+                <strong>Informes / Inscripción</strong>
+                <small>WhatsApp oficial</small>
+              </span>
+              <span class="arrow">→</span>
+            </a>
+
+            <a class="quick__item" href="#accesos">
+              <span class="icon">🎓</span>
+              <span>
+                <strong>Portal del Alumno</strong>
+                <small>Materiales y tareas</small>
+              </span>
+              <span class="arrow">→</span>
+            </a>
+
+            <a class="quick__item" href="#profesores">
+              <span class="icon">✅</span>
+              <span>
+                <strong>Profesores verificados</strong>
+                <small>Transparencia y confianza</small>
+              </span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+
+          <div class="note">
+            <strong>Próximo inicio:</strong>
+            <span id="nextStart">Actualiza esta fecha en script.js</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- ACCESOS -->
+  <section id="accesos" class="section">
+    <div class="container">
+      <header class="section__head">
+        <h2>Accesos del Portal</h2>
+        <p class="muted">Diseñado para alumnos, padres y comunidad. Ordenado, verificable y profesional.</p>
+      </header>
+
+      <div class="grid grid--2">
+        <div class="card">
+          <h3>🎓 Para alumnos</h3>
+          <p class="muted">Todo lo necesario para avanzar por nivel.</p>
+          <div class="stack">
+            <a class="btn btn--block" href="#" data-soon>📚 Plataforma del Alumno (Materiales)</a>
+            <a class="btn btn--block btn--ghost" href="#" data-soon>🧩 Retos y Proyectos</a>
+            <a class="btn btn--block btn--ghost" href="#" data-soon>🕒 Horarios y Calendario</a>
+            <a class="btn btn--block btn--ghost" href="#" data-soon>📄 Certificados / Constancias</a>
+          </div>
+          <p class="hint">*Si aún no tienes Drive/Classroom, igual queda “Próximamente” y se ve formal.</p>
+        </div>
+
+        <div class="card">
+          <h3>👨‍👩‍👧 Para padres</h3>
+          <p class="muted">Transparencia, metodología y evidencias.</p>
+          <div class="stack">
+            <a class="btn btn--block" href="#profesores">✅ Profesores Verificados</a>
+            <a class="btn btn--block btn--ghost" href="#evidencias">📸 Evidencias de clases</a>
+            <a class="btn btn--block btn--ghost" href="#" data-soon>📌 Metodología STEM</a>
+            <a class="btn btn--block btn--ghost" href="#contacto">📍 Ubicación / Modalidad</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <div>
+          <h3>¿Quieres una experiencia aún más pro?</h3>
+          <p class="muted">Luego activamos login de alumno y panel (nivel 3). Esta web ya está lista para escalar.</p>
+        </div>
+        <a class="btn" href="#contacto">Activar versión Pro</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOSISTEMA -->
+  <section id="ecosistema" class="section section--alt">
+    <div class="container">
+      <header class="section__head">
+        <h2>Ecosistema P-CAB Tech</h2>
+        <p class="muted">Una marca madre: <strong>P-CAB Technology</strong>. Líneas escalables por área: <strong>P-CAB Tech + Área</strong>.</p>
+      </header>
+
+      <div class="grid grid--3">
+        <article class="card">
+          <h3>P-CAB Tech Academy</h3>
+          <p class="muted">Educación general (base): Robótica, Programación, IA y STEM por niveles.</p>
+          <a class="link" href="#contacto">Ver cursos →</a>
+        </article>
+
+        <article class="card">
+          <h3>P-CAB Tech Robótica</h3>
+          <p class="muted">Arduino, Raspberry Pi, electrónica aplicada, proyectos físicos y competencias.</p>
+          <a class="link" href="#contacto">Quiero informes →</a>
+        </article>
+
+        <article class="card">
+          <h3>P-CAB Tech Automatización</h3>
+          <p class="muted">PLC, sensores, control, SCADA e IoT. Línea para industria y empleabilidad.</p>
+          <a class="link" href="#contacto">Capacitaciones →</a>
+        </article>
+
+        <article class="card">
+          <h3>P-CAB Tech Inteligencia Artificial</h3>
+          <p class="muted">IA aplicada: visión, datos, ML y soluciones reales para educación e industria.</p>
+          <a class="link" href="#contacto">Programas IA →</a>
+        </article>
+
+        <article class="card">
+          <h3>P-CAB Tech Educación</h3>
+          <p class="muted">Metodologías activas, formación docente, innovación educativa y asesoría.</p>
+          <a class="link" href="#contacto">Asesoría →</a>
+        </article>
+
+        <article class="card">
+          <h3>P-CAB Tech Salud</h3>
+          <p class="muted">Tecnología + bienestar: proyectos de salud, wearables y soluciones de impacto.</p>
+          <a class="link" href="#contacto">Proyectos salud →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVIDENCIAS -->
+  <section id="evidencias" class="section">
+    <div class="container">
+      <header class="section__head">
+        <h2>Evidencias y resultados</h2>
+        <p class="muted">Aquí irá tu contenido real: fotos, videos, proyectos, logros y avances por módulo.</p>
+      </header>
+
+      <div class="grid grid--2">
+        <div class="card">
+          <h3>📸 Galería de clases</h3>
+          <p class="muted">
+            Sube 6–12 fotos reales (alumnos, prototipos, laptops, robots, retos).
+            Esto convence más que cualquier texto.
+          </p>
+          <div class="placeholder">
+            <span>Espacio para imágenes</span>
+            <small>(Luego lo reemplazamos por tu galería real)</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>🏆 Proyectos y logros</h3>
+          <ul class="list">
+            <li><span class="tick">✓</span> Proyectos por nivel (inicial / intermedio / avanzado)</li>
+            <li><span class="tick">✓</span> Retos semanales y rúbricas</li>
+            <li><span class="tick">✓</span> Portafolio del alumno</li>
+            <li><span class="tick">✓</span> Certificación al finalizar</li>
+          </ul>
+          <a class="btn btn--block btn--ghost" href="#" data-soon>Ver portafolio (próximamente)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFESORES -->
+  <section id="profesores" class="section section--alt">
+    <div class="container">
+      <header class="section__head">
+        <h2>Profesores verificados</h2>
+        <p class="muted">Transparencia: experiencia, enfoque técnico y acompañamiento real.</p>
+      </header>
+
+      <div class="grid grid--3">
+        <div class="card profile">
+          <div class="avatar">👨‍🏫</div>
+          <h3>Docente 1</h3>
+          <p class="muted">Especialidad: Robótica / Programación</p>
+          <div class="chips">
+            <span class="chip">STEM</span>
+            <span class="chip">Proyectos</span>
+            <span class="chip">Evaluación</span>
+          </div>
+          <p class="hint">Luego ponemos: nombre real, foto, certificados, experiencia.</p>
+        </div>
+
+        <div class="card profile">
+          <div class="avatar">👩‍🏫</div>
+          <h3>Docente 2</h3>
+          <p class="muted">Especialidad: IA / Datos</p>
+          <div class="chips">
+            <span class="chip">ML</span>
+            <span class="chip">Visión</span>
+            <span class="chip">Python</span>
+          </div>
+          <p class="hint">La confianza sube cuando se ve quién enseña.</p>
+        </div>
+
+        <div class="card profile">
+          <div class="avatar">👨‍🔧</div>
+          <h3>Docente 3</h3>
+          <p class="muted">Especialidad: Automatización / IoT</p>
+          <div class="chips">
+            <span class="chip">PLC</span>
+            <span class="chip">Sensores</span>
+            <span class="chip">Industria</span>
+          </div>
+          <p class="hint">Ideal para tu línea P-CAB Tech Automatización.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <header class="section__head">
+        <h2>Contacto e inscripción</h2>
+        <p class="muted">Un canal oficial, directo y rápido.</p>
+      </header>
+
+      <div class="grid grid--2">
+        <div class="card">
+          <h3>📲 WhatsApp oficial</h3>
+          <p class="muted">
+            Presiona el botón y te abre un mensaje listo para inscribirte.
+            (Solo cambia tu número en <code>script.js</code>)
+          </p>
+          <a class="btn btn--block" id="waBtn" href="#" target="_blank" rel="noreferrer">Escribir por WhatsApp</a>
+
+          <div class="divider"></div>
+
+          <h3>🌐 Redes oficiales</h3>
+          <div class="social">
+            <a class="social__btn" href="#" data-soon>Instagram</a>
+            <a class="social__btn" href="#" data-soon>TikTok</a>
+            <a class="social__btn" href="#" data-soon>Facebook</a>
+          </div>
+          <p class="hint">Luego pegamos tus enlaces reales.</p>
+        </div>
+
+        <div class="card">
+          <h3>📍 Ubicación / Modalidad</h3>
+          <p class="muted">
+            Coloca aquí tu dirección, referencia y modalidad (presencial / híbrida / virtual).
+          </p>
+
+          <div class="info">
+            <div>
+              <strong>Ciudad:</strong>
+              <span>Huancayo, Junín</span>
+            </div>
+            <div>
+              <strong>Modalidad:</strong>
+              <span>Presencial / Virtual (según curso)</span>
+            </div>
+            <div>
+              <strong>Horario de atención:</strong>
+              <span>Lun–Sáb (ajustable)</span>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <h3>🛡️ Compromiso</h3>
+          <ul class="list">
+            <li><span class="tick">✓</span> Comunicación clara con padres</li>
+            <li><span class="tick">✓</span> Evidencias de avance</li>
+            <li><span class="tick">✓</span> Evaluación por niveles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="footer__brand">
+          <span class="brand__logo brand__logo--sm">P</span>
+          <div>
+            <strong>P-CAB Technology</strong>
+            <small>Portal Oficial</small>
+          </div>
+        </div>
+        <p class="muted">
+          Educación tecnológica con enfoque STEM y proyectos reales.
+          Marca madre para líneas: P-CAB Tech + Área.
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <a href="#accesos">Accesos</a>
+        <a href="#ecosistema">Ecosistema</a>
+        <a href="#profesores">Profesores</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div class="footer__legal">
+        <small class="muted">© <span id="year"></span> P-CAB Technology. Todos los derechos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
